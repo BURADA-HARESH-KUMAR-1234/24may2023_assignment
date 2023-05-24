@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+void main()
+{
+  int a[100],n, s, i, count=0;
+  printf("enter the size of array");
+  scanf("%d",&n);
+  printf("enter %d elements",n);
+  for(i=0;i<n;i++)
+  scanf("%d",&a[i]);
+  printf("enter the element");
+  scanf("%d",&s);
+  for(i=0;i<n;i++)
+  {
+    if(a[i]==s)
+    count++;
+    else
+    printf("invalid data");
+  }
+  printf("%d ---> %d",s,count);
+}
