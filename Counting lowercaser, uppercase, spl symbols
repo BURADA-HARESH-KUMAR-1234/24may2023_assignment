@@ -1,0 +1,23 @@
+#include<stdio.h>
+ #include<string.h>
+ void main()
+ {
+   char str[100];
+   gets(str);
+   int i=0,ucase=0,lcase=0,spl=0;
+   while(str[i++]!='\0')
+   {
+     if(str[i]>='A' && str[i]<='Z'){
+     ucase++;
+     continue;}
+     else if(str[i]>='a' && str[i]<='z'){
+     lcase++;
+     continue;}
+     else{
+     spl++;
+     continue;}
+   }
+   printf("\nuppercase letters ---> %d",ucase);
+   printf("\nlowercase letters ---> %d",lcase);
+   printf("\nspecial symbol ---> %d",spl);
+ }
