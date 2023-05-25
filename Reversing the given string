@@ -1,0 +1,22 @@
+ #include<stdio.h>
+ #include<string.h>
+ void main()
+ {
+   char str[100];
+   gets(str);
+   int i=0,count=0;
+   while(str[i]!='\0')
+   {
+     count++;
+     i++;
+   }
+   int len=count;
+   for(i=0;i<len;i++)
+   printf("%c",str[i]);
+   printf("\n");
+   while(len>=0)
+   {
+     printf("%c",str[len]);
+     len--;
+   }
+ }
