@@ -1,0 +1,28 @@
+#include<stdio.h>
+void binary(int a[],int n,int s, int e)
+{
+   int mid;
+   while(s<=e)
+   {
+     mid=(s+e)/2;
+     if(a[mid]==n)
+     {
+        printf("%d-%d",n,mid);
+     }
+     if(a[mid]>n)
+     s=mid+1;
+     else
+     e=mid-1;
+   }
+}
+void main()
+ {
+ int a[]={1,2,3,4,5,6,7};
+ int n, s, e;
+ int len=sizeof(a)/sizeof(int);
+ scanf("%d",&n);
+ s=0;
+ e=len-1
+ binary(a,n, s, e);
+}
+
